@@ -1,7 +1,4 @@
-package CountNonStopWords;
-
-
-
+package ScreenNames;
 
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -11,21 +8,25 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 
-public class CountNonStopJob {
+
+
+
+
+public class CountScreenNameJob {
     public static void main(String[] args) throws Exception {
         if (args.length != 2) {
             System.err.println("Usage: CountJob <input path> <output path>");
             System.exit(-1);
         }
         Job job = new Job();
-        job.setJarByClass(CountNonStopWords.CountNonStopJob.class);
+        job.setJarByClass(ScreenNames.CountScreenNameJob.class);
         job.setJobName("Count Words");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
-        job.setMapperClass(CountNonStopWords.CountNonStopMapper.class);
-        job.setReducerClass(CountNonStopWords.CountNonStopReducer.class);
+        job.setMapperClass(ScreenNames.CountScreenNameMapper.class);
+        job.setReducerClass(ScreenNames.CountScreenNameReducer.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);

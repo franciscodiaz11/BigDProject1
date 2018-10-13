@@ -15,10 +15,11 @@ public class CountMapper extends Mapper<LongWritable,Text, Text , IntWritable > 
 @Override
 public void map(LongWritable key, Text value, Context context){
     String rawtweet = value.toString();
-    String [] searchwords = {"Trump","Flu","Zika","Diarrhea","Ebola", "Headache","Measles"};
+    String regex = "[^a-zA-Z0-9\\s]";
+    String [] searchwords = {"TRUMP","FLU","ZIKA","DIARRHEA","EBOLA", "HEADACHE","MEASLES"};
     try {
         Status tweetstatus  = TwitterObjectFactory.createStatus(rawtweet);
-        String[] words = tweetstatus.getText().split(" ");
+        String[] words = tweetstatus.getText().replaceAll(regex," ").toUpperCase().split(" ");
         for(int i=0; i<words.length;i++){
             for(int j=0;j<searchwords.length;j++){
                 if(words[i].equals(searchwords[j])){
