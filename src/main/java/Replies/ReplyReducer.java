@@ -20,9 +20,11 @@ public class ReplyReducer extends Reducer<Text, Text,Text,Text>{
 
         // setup a counter
         String reply = "";
+        int count =0 ;
         // iterator over list of 1s, to count them (no size() or length() method available)
-        for (Text value : values){
-            reply += value.toString()+" ";
+        for (Text value : values) {
+            reply += value.toString() + " ";
+            count++;
         }
         // emit key-pair: key, count
         // key is the abreviation for the state
@@ -31,7 +33,7 @@ public class ReplyReducer extends Reducer<Text, Text,Text,Text>{
         //logger.trace("Red: " + key.toString());
 
         // DEBUG
-        context.write(key, new Text(reply));
+        context.write(key, new Text(count+" | "+reply));
     }
 }
 

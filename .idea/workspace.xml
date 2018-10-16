@@ -10,7 +10,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/Project1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Project1_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Replies/ReplyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Replies/ReplyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Replies/ReplyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Replies/ReplyMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Replies/ReplyReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Replies/ReplyReducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Replies/ReplyReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Replies/ReplyReducer.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,12 +25,14 @@
     <session id="-1266743199">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -46,13 +49,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2547" />
+          <entry key="java" value="2633" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2547" />
+          <entry key="JAVA" value="2633" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -60,12 +63,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Replies/ReplyMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="30" column="125" selection-start-line="30" selection-start-column="125" selection-end-line="30" selection-end-column="125" />
+            <state relative-caret-position="364">
+              <caret line="30" column="134" selection-start-line="30" selection-start-column="134" selection-end-line="30" selection-end-column="134" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Replies/ReplyReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="435">
+              <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,12 +118,12 @@
         <option value="$PROJECT_DIR$/src/main/java/ReTweets/ReTweetJob.java" />
         <option value="$PROJECT_DIR$/src/main/java/ReTweets/ReTweetMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/Replies/ReplyJob.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Replies/ReplyReducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/TweetsUser/TweetUerMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/TweetsUser/TweetUserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/TweetsUser/TweetUserJob.java" />
         <option value="$PROJECT_DIR$/src/main/java/TweetsUser/TweetUserReducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/CountUniqueWords/CountMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Replies/ReplyReducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Replies/ReplyMapper.java" />
       </list>
     </option>
@@ -241,7 +244,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539624523343" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539651168279" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.19661458" />
@@ -318,7 +321,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26979" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2819063" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -508,8 +511,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Replies/ReplyMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="30" column="125" selection-start-line="30" selection-start-column="125" selection-end-line="30" selection-end-column="125" />
+        <state relative-caret-position="364">
+          <caret line="30" column="134" selection-start-line="30" selection-start-column="134" selection-end-line="30" selection-end-column="134" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -518,8 +521,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Replies/ReplyReducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="435">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

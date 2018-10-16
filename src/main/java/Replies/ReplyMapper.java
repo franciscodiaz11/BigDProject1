@@ -28,7 +28,7 @@ public class ReplyMapper extends Mapper<LongWritable,Text, Text, Text > {
             tweetstatus = TwitterObjectFactory.createStatus(rawtweet);
 
             if(tweetstatus.getInReplyToStatusId() !=-1){
-                context.write(new Text((tweetstatus.getUser().getScreenName())),new Text(tweetstatus.getInReplyToScreenName()));
+                context.write(new Text((Long.toString(tweetstatus.getInReplyToStatusId()))),new Text(Long.toString(tweetstatus.getId())));
             }
         } catch (TwitterException e1) {
             e1.printStackTrace();
